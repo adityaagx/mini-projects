@@ -1,9 +1,11 @@
-let randomNumber = Math.floor(Math.random() * 10) + 1;
-console.log(randomNumber)
+console.log("JS CONNECTED");
 
-let input = document.getElementbyId("guessInput");
-let button = document.getElementbyId("button");
-let message = document.getElementsbyId("message");
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+console.log("Secret number:", randomNumber);
+
+let input = document.getElementById("guessInput");
+let button = document.getElementById("guessBtn");
+let message = document.getElementById("message");
 
 button.addEventListener("click", function () {
   let userGuess = Number(input.value);
@@ -11,9 +13,8 @@ button.addEventListener("click", function () {
   if (userGuess === randomNumber) {
     message.innerText = "Correct! 🎉";
   } else if (userGuess > randomNumber) {
-    message.innerText = "Too high!";
+    message.innerText = "Too High!";
   } else {
-    message.innerText = "Too low!";
+    message.innerText = "Too Low!";
   }
 });
-
