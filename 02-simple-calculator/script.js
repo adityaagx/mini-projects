@@ -1,29 +1,34 @@
-let num1 = document.getElementById("num1");
-let num2 = document.getElementById("num2");
+let num1 = document.querySelector('#num1');
+let num2 = document.querySelector('#num2');
 
-let addBtn = document.getElementById("addBtn");
-let subBtn = document.getElementById("subBtn");
-let mulBtn = document.getElementById("mulBtn");
-let divBtn = document.getElementById("divBtn");
+let addBtn = document.querySelector('#addBtn');
+let subBtn = document.querySelector('#subBtn');
+let mulBtn = document.querySelector('#mulBtn');
+let divBtn = document.querySelector('#divBtn');
 
-let result = document.getElementById("result");
+let result = document.querySelector('#result');
+let resetBtn = document.querySelector('#resetBtn')
 
-addBtn.addEventListener("click", function () {
+addBtn.addEventListener("click", function(){
   let sum = Number(num1.value) + Number(num2.value);
-  result.innerText = "Result: " + sum;
+  result.innerText = "Result : " + sum;
 });
 
-subBtn.addEventListener("click", function () {
+subBtn.addEventListener("click", function(){
   let diff = Number(num1.value) - Number(num2.value);
-  result.innerText = "Result: " + diff;
+  result.innerText = "Result : " + diff;
 });
 
-mulBtn.addEventListener("click", function () {
-  let product = Number(num1.value) * Number(num2.value);
-  result.innerText = "Result: " + product;
+mulBtn.addEventListener("click", function(){
+  let mul = Number(num1.value) * Number(num2.value);
+  result.innerText = "Result : " + mul;
 });
 
-divBtn.addEventListener("click", function () {
-  let division = Number(num1.value) / Number(num2.value);
-  result.innerText = "Result: " + division;
+divBtn.addEventListener("click", function(){
+  let div = Number(num1.value) / Number(num2.value);
+  result.innerText = "Result : " + div;
+});
+
+resetBtn.addEventListener("click", function(){
+  location.reload()
 });
