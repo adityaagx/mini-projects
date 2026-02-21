@@ -18,6 +18,17 @@ HTML, CSS, and Vanilla JavaScript.
 7. Form Validation
 8. Todo List
 9. Digital Clock
+10. Stopwatch App
+11. Expense Tracker  
+12. Notes App  
+13. Weather App  
+14. Movie Search App  
+15. Quiz App  
+16. Drag and Drop Kanban Board  
+17. Image Slider / Carousel  
+18. Password Generator  
+19. Budget Tracker with Categories  
+20. Mini E-commerce Cart System  
 
 ## Tech Used
 - HTML
