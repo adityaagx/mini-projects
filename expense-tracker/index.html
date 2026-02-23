@@ -6,6 +6,29 @@
     <title>expense-tracker</title>
 </head>
 <body>
-    
+    <h3>Expense Tracker</h3>
+
+    <!-- Input Section -->
+    <div class="expense-form">
+     <input type="text" id="expense-name" placeholder="Enter expense name">
+     <br><br>
+     <input type="number" id="expense-amount" placeholder="Enter amount">
+     <br><br>
+     <button id="addBtn">Add Expense</button>
+    </div>
+
+    <br><br>
+
+    <!-- Expense list-->
+    <div class="expense-list">
+     <ol id="expense-items"></ol>
+    </div>
+
+    <!-- Total section-->
+     <div class="total-section">
+        <h3>Total: ₹<span id="total-amount">0</span> </h3>
+     </div>
+
+     <script src="script.js"></script>
 </body>
 </html>
