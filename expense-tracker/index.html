@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>expense-tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h3>Expense Tracker</h3>
+
+  <div class="container">
+    <h1>Expense Tracker</h1>
 
     <!-- Input Section -->
     <div class="expense-form">
-     <input type="text" id="expense-name" placeholder="Enter expense name">
-     <br><br>
-     <input type="number" id="expense-amount" placeholder="Enter amount">
-     <br><br>
-     <button id="addBtn">Add Expense</button>
+      <input 
+        type="text" 
+        id="expense-name" 
+        placeholder="Enter expense name"
+      />
+
+      <input 
+        type="number" 
+        id="expense-amount" 
+        placeholder="Enter amount"
+        min="0"
+      />
+
+      <button id="add-btn">Add Expense</button>
     </div>
 
-    <br><br>
-
-    <!-- Expense list-->
+    <!-- Expense List -->
     <div class="expense-list">
-     <ol id="expense-items"></ol>
+      <h2>Expenses</h2>
+      <ul id="expense-items">
+        <!-- Expenses will be added here dynamically -->
+      </ul>
     </div>
 
-    <!-- Total section-->
-     <div class="total-section">
-        <h3>Total: ₹<span id="total-amount">0</span> </h3>
-     </div>
+    <!-- Total Section -->
+    <div class="total-section">
+      <h2>Total: ₹<span id="total-amount">0</span></h2>
+    </div>
 
-     <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
